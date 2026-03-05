@@ -56,7 +56,7 @@ public class CentroFP {
                 sb.append(alumnos[i].toString());
             }
         }
-        sb.append("\n}");
+        sb.append("\n");
 
         return sb.toString();
     }
