@@ -21,7 +21,7 @@ public class CentroFP {
         return null;
     }
 
-
+    // creamos la clase buscar primer hueco libre
     private int buscarPrimerHuecoLibre(){
         int posicionLibre = -1;
         boolean seguirBuscando = true;
@@ -34,7 +34,7 @@ public class CentroFP {
         }
         return posicionLibre;
     }
-
+    //creamos la clase registrar alumno
     public boolean registrarAlumno(Alumno alumno){
         boolean alumnoAnadido = false;
         int posicion;
@@ -49,6 +49,7 @@ public class CentroFP {
         return alumnoAnadido;
     }
 
+    //creamos la clase mostrar alumno
     public String mostrarAlumno(){
         StringBuilder sb = new StringBuilder("Alumnos : \n");
         for (int i = 0; i < MAX_ALUMNOS; i++) {
