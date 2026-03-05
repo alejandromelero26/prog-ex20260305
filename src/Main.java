@@ -1,13 +1,26 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+import java.lang.classfile.instruction.NewMultiArrayInstruction;
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
+public class Main {
+    public static void main(String[] args) {
+        CentroFP centroFP = new CentroFP(20);
+
+        Alumno alumno1 = new Alumno(1, "Alejandro", "DAM", 23);
+        Alumno alumno2 = new Alumno(2, "Pepe", "ASIR", 18);
+        Alumno alumno3 = new Alumno(3, "Pedro", "DAM", 19);
+
+        centroFP.buscarAlumno(4) ;
+        //System.out.println(centroFP.buscarAlumno(4) ) ;
+
+        System.out.println(centroFP.registrarAlumno(alumno1));
+        System.out.println(centroFP.registrarAlumno(alumno2));
+        System.out.println(centroFP.registrarAlumno(alumno3));
+
+        System.out.println(centroFP.mostrarAlumno());
+
+        System.out.println(centroFP.contarAlumnos());
+
+
+
+
+    }
 }
