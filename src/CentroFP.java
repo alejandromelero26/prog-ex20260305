@@ -60,7 +60,7 @@ public class CentroFP {
 
         return sb.toString();
     }
-
+    //creamos la clase contar Alumnos;
     public int contarAlumnos(){
         int contador = 0 ;
         for (int i = 0; i < MAX_ALUMNOS; i++) {
