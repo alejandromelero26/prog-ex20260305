@@ -11,7 +11,7 @@ public class CentroFP {
         alumnos = new  Alumno[MAX_ALUMNOS];
     }
 
-
+    //creamos la clase buscar alumno
     public Alumno buscarAlumno(int id) {
         for (int i = 0; i < MAX_ALUMNOS; i++) {
             if (alumnos[i] != null && alumnos[i].getId() == id) {
@@ -20,6 +20,7 @@ public class CentroFP {
         }
         return null;
     }
+
 
     private int buscarPrimerHuecoLibre(){
         int posicionLibre = -1;
@@ -61,7 +62,7 @@ public class CentroFP {
     }
 
     public int contarAlumnos(){
-        int contador = 0;
+        int contador = 0 ;
         for (int i = 0; i < MAX_ALUMNOS; i++) {
             if (alumnos[i] != null) {
                 contador++;
