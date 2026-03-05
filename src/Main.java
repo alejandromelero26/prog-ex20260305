@@ -8,19 +8,17 @@ public class Main {
         Alumno alumno2 = new Alumno(2, "Pepe", "ASIR", 18);
         Alumno alumno3 = new Alumno(3, "Pedro", "DAM", 19);
 
-        System.out.println(centroFP.registrarAlumno(alumno1));
-        System.out.println(centroFP.registrarAlumno(alumno2));
-        System.out.println(centroFP.registrarAlumno(alumno3));
+        System.out.println("Registro: " + centroFP.registrarAlumno(alumno1));
+        System.out.println("Registro: " + centroFP.registrarAlumno(alumno2));
+        System.out.println("Registro: " + centroFP.registrarAlumno(alumno3));
 
         System.out.println(centroFP.mostrarAlumno());
 
         System.out.println("Numero de alumnos: " + centroFP.contarAlumnos());
 
-        centroFP.buscarAlumno(4) ;
-        //System.out.println(centroFP.buscarAlumno(4) ) ;
 
-
-
+        System.out.println("Buscamos alumno existente: " + centroFP.buscarAlumno(1) ) ;
+        System.out.println("Buscamos alumno inexistente: " + centroFP.buscarAlumno(5) ) ;
 
     }
 }
