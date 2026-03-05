@@ -50,7 +50,7 @@ public class CentroFP {
     }
 
     public String mostrarAlumno(){
-        StringBuilder sb = new StringBuilder("Alumnos :{");
+        StringBuilder sb = new StringBuilder("Alumnos : \n");
         for (int i = 0; i < MAX_ALUMNOS; i++) {
             if (alumnos[i] != null) {
                 sb.append(alumnos[i].toString());
