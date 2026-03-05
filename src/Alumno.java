@@ -22,21 +22,10 @@ public class Alumno {
     public int getEdad() {
         return edad;
     }
-    /*/@Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder("Alumnos :{");
-        sb.append("id=").append(id);
-        sb.append(", nombre=").append(nombre);
-        sb.append(", tituloFP=").append(tituloFP);
-        sb.append(", edad=").append(edad);
-        sb.append("}");
-        return sb.toString();
-    }*/
-
     @Override
     public String toString() {
-        return String.format("[id: %d] %s - Titulo FP: %s (%d edad)",
-                id, nombre, tituloFP, edad);
+        return String.format("id: %d %s - Titulo FP: %s %d anios\n ",
+                id, nombre, tituloFP, edad  );
     }
 
 }
